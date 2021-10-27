@@ -1,11 +1,9 @@
 <?php
 require_once 'inc/headers.php';
 require_once 'inc/functions.php';
-require_once 'inc/delete.php';
 
 try {
     $db = openDB();
-
     $sql = "select * from item";
     $query = $db->query($sql);
     $results = $query->fetchAll(PDO::FETCH_ASSOC);
