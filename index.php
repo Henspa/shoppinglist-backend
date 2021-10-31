@@ -4,6 +4,7 @@ require_once 'inc/functions.php';
 
 try {
     $db = openDB();
+    
     $sql = "select * from item";
     $query = $db->query($sql);
     $results = $query->fetchAll(PDO::FETCH_ASSOC);
